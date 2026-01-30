@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turnr - Fix rotated photos, find duplicates, and clean up your photo library. The smartest way to organize your iPhone photos.">
+    <meta name="keywords" content="photo cleaner, duplicate photos, rotate photos, iPhone app, photo organizer">
+    <meta name="author" content="Turnr">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Turnr - Smart Photo Cleanup for iPhone">
+    <meta property="og:description" content="Fix rotated photos, find duplicates, and free up storage space on your iPhone.">
+    <meta property="og:image" content="https://chrisincyber.github.io/Turn_website/assets/og-image.png">
+    <meta property="og:url" content="https://chrisincyber.github.io/Turn_website/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Turnr - Smart Photo Cleanup">
+    <meta name="twitter:description" content="Fix rotated photos, find duplicates, and free up storage space.">
+
+    <title>Turnr - Smart Photo Cleanup for iPhone</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Turnr" class="logo-img">
+                <span>Turnr</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#download" class="btn btn-primary btn-sm">Download</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#download" class="btn btn-primary">Download</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Now available on the App Store</span>
+                </div>
+                <h1>Your photos deserve better</h1>
+                <p class="hero-subtitle">Fix rotated photos, find duplicates, and clean up your library in seconds. Turnr uses smart AI to keep your memories organized.</p>
+                <div class="hero-cta">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        Download for iPhone
+                    </a>
+                    <a href="#features" class="btn btn-secondary btn-lg">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">★ App Store</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">50GB+</span>
+                        <span class="stat-label">Space Saved</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <img src="assets/hero-screenshot.svg" alt="Turnr App Screenshot">
+                </div>
+                <div class="floating-card card-1">
+                    <span class="card-icon">🔄</span>
+                    <span>47 photos fixed</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-icon">📸</span>
+                    <span>2.3 GB saved</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Everything you need to organize your photos</h2>
+                <p>Powerful tools that make photo management effortless</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card feature-rotate">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 4v6h-6M1 20v-6h6"/>
+                            <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+                        </svg>
+                    </div>
+                    <h3>Fix Rotated Photos</h3>
+                    <p>Automatically detect and fix photos that display sideways. Perfect for Canon, Sony, and other camera imports.</p>
+                    <ul class="feature-list">
+                        <li>Batch rotate multiple photos</li>
+                        <li>Auto-detect orientation issues</li>
+                        <li>Preserve original quality</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card feature-duplicates">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="8" y="8" width="12" height="12" rx="2"/>
+                            <path d="M4 16V6a2 2 0 012-2h10"/>
+                        </svg>
+                    </div>
+                    <h3>Find Duplicates</h3>
+                    <p>Smart AI detection finds visually similar photos, including burst shots and near-identical images.</p>
+                    <ul class="feature-list">
+                        <li>AI-powered visual comparison</li>
+                        <li>Keep best quality automatically</li>
+                        <li>Review before deleting</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card feature-screenshots">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3>Clean Screenshots</h3>
+                    <p>Quickly browse and delete old screenshots that clutter your photo library.</p>
+                    <ul class="feature-list">
+                        <li>Smart screenshot detection</li>
+                        <li>Bulk selection & delete</li>
+                        <li>See total space saved</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card feature-storage">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                            <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>
+                        </svg>
+                    </div>
+                    <h3>Free Up Space</h3>
+                    <p>Find large files and old photos taking up precious storage on your device.</p>
+                    <ul class="feature-list">
+                        <li>Identify space hogs</li>
+                        <li>Review old photos by year</li>
+                        <li>Track storage savings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2>Clean up your library in 3 simple steps</h2>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Scan Your Library</h3>
+                        <p>Turnr analyzes your photo library using Apple's Vision AI to find issues.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Review & Select</h3>
+                        <p>Browse through detected issues and choose what to fix or delete.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Clean & Save</h3>
+                        <p>One tap to fix rotation or remove duplicates. Watch your storage grow!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2>Simple, transparent pricing</h2>
+                <p>Start with a free trial. Cancel anytime.</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Weekly</h3>
+                        <p class="pricing-desc">Try it out</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$4.99</span>
+                        <span class="period">/week</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> All features included</li>
+                        <li><span class="check">✓</span> 3-day free trial</li>
+                        <li><span class="check">✓</span> Cancel anytime</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-block">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Yearly</h3>
+                        <p class="pricing-desc">Best value</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$29.99</span>
+                        <span class="period">/year</span>
+                    </div>
+                    <p class="pricing-savings">Just $2.50/month — Save 75%</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> All features included</li>
+                        <li><span class="check">✓</span> 3-day free trial</li>
+                        <li><span class="check">✓</span> Cancel anytime</li>
+                        <li><span class="check">✓</span> Priority support</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary btn-block">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Lifetime</h3>
+                        <p class="pricing-desc">Pay once, own forever</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$49.99</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> All features included</li>
+                        <li><span class="check">✓</span> All future updates</li>
+                        <li><span class="check">✓</span> No subscription needed</li>
+                        <li><span class="check">✓</span> Priority support</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-block">Buy Lifetime</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reviews</span>
+                <h2>Loved by thousands</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Finally! An app that fixes my Canon photos. They always showed up sideways in other apps. Turnr fixed all 200+ photos in seconds."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Sarah M.</span>
+                        <span class="author-title">Photographer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Freed up 8GB on my phone by removing duplicate photos I didn't even know I had. The AI detection is surprisingly accurate!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Mike R.</span>
+                        <span class="author-title">iPhone User</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Clean, simple interface. Does exactly what it promises. The screenshot cleanup feature alone is worth the price."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Lisa K.</span>
+                        <span class="author-title">Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="download-cta" id="download">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to clean up your photos?</h2>
+                <p>Download Turnr today and reclaim your storage space.</p>
+                <a href="https://apps.apple.com/app/turnr" class="btn btn-white btn-lg">
+                    <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    Download on the App Store
+                </a>
+                <p class="cta-note">Free to try • No credit card required</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/logo.png" alt="Turnr" class="logo-img">
+                        <span>Turnr</span>
+                    </a>
+                    <p>Smart photo cleanup for iPhone.</p>
+                    <p class="footer-love">Made with ❤️ in 🇨🇭</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#download">Download</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="mailto:support@turnrapp.com">Contact Us</a>
+                        <a href="mailto:support@turnrapp.com">Report a Bug</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Turnr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navbar = document.querySelector('.navbar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .step, .pricing-card, .testimonial-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
