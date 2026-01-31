@@ -918,6 +918,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
         width: 2px;
         height: 40px;
         margin: 0;
+        align-self: center;
     }
 
     .pricing-cards {
