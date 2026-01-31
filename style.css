@@ -910,6 +910,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
     .steps {
         flex-direction: column;
+        align-items: center;
         gap: 40px;
     }
 
