@@ -1023,3 +1023,148 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 .testimonial-card:nth-child(1) { transition-delay: 0ms; }
 .testimonial-card:nth-child(2) { transition-delay: 100ms; }
 .testimonial-card:nth-child(3) { transition-delay: 200ms; }
+
+/* ========================================
+   2030 Visual Refresh
+   ======================================== */
+body.theme-2030 {
+    --primary: #7c5cff;
+    --primary-dark: #5f3eff;
+    --primary-light: #18e1ff;
+    --primary-subtle: rgba(124, 92, 255, 0.18);
+    --bg-primary: #070b1b;
+    --bg-secondary: #0b1227;
+    --bg-tertiary: #121a35;
+    --text-primary: #f4f8ff;
+    --text-secondary: #a7b3d1;
+    --text-tertiary: #7380a8;
+    --border-color: rgba(145, 170, 255, 0.2);
+    --shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 30px 80px rgba(17, 22, 44, 0.65);
+    --shadow-xl: 0 32px 90px rgba(0, 0, 0, 0.7);
+    background:
+        radial-gradient(circle at 12% 12%, rgba(24, 225, 255, 0.24), transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(124, 92, 255, 0.35), transparent 45%),
+        linear-gradient(160deg, #060915 0%, #0a1024 45%, #0b1738 100%);
+    color: var(--text-primary);
+}
+
+.theme-2030::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(255,255,255,0.2) 0.5px, transparent 0.5px);
+    background-size: 3px 3px;
+    opacity: 0.08;
+    z-index: -1;
+}
+
+.theme-2030 h1,
+.theme-2030 h2,
+.theme-2030 .logo span {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.theme-2030 .navbar {
+    border-bottom: 1px solid transparent;
+}
+
+.theme-2030 .navbar.scrolled {
+    background: rgba(8, 12, 29, 0.72);
+    border-bottom-color: rgba(147, 170, 255, 0.25);
+}
+
+.theme-2030 .hero {
+    padding-top: 150px;
+}
+
+.theme-2030 .hero-badge,
+.theme-2030 .feature-card,
+.theme-2030 .pricing-card,
+.theme-2030 .testimonial-card,
+.theme-2030 .footer,
+.theme-2030 .mobile-menu,
+.theme-2030 .step,
+.theme-2030 .hero-stats {
+    background: linear-gradient(145deg, rgba(15, 22, 46, 0.95), rgba(9, 14, 34, 0.82));
+    border: 1px solid rgba(145, 170, 255, 0.2);
+    backdrop-filter: blur(14px);
+    box-shadow: var(--shadow);
+}
+
+.theme-2030 .hero-badge {
+    color: #d6f2ff;
+}
+
+.theme-2030 .hero h1 {
+    background: linear-gradient(100deg, #ffffff 10%, #b4f5ff 40%, #a693ff 75%, #ffffff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.theme-2030 .phone-mockup {
+    border: 1px solid rgba(123, 230, 255, 0.45);
+    box-shadow: 0 20px 80px rgba(24, 225, 255, 0.25);
+}
+
+.theme-2030 .phone-mockup img,
+.theme-2030 .feature-showcase img {
+    filter: saturate(1.1) contrast(1.05);
+}
+
+.theme-2030 .floating-card,
+.theme-2030 .popular-badge,
+.theme-2030 .step-number,
+.theme-2030 .btn-primary {
+    background: linear-gradient(120deg, #7c5cff 0%, #18e1ff 100%);
+    color: #fff;
+    border: none;
+}
+
+.theme-2030 .btn {
+    border: 1px solid rgba(155, 190, 255, 0.3);
+}
+
+.theme-2030 .btn-secondary,
+.theme-2030 .btn-white {
+    background: rgba(22, 32, 64, 0.9);
+    color: #e8f0ff;
+}
+
+.theme-2030 .section-tag {
+    color: #b6e9ff;
+    background: rgba(24, 225, 255, 0.12);
+    border: 1px solid rgba(125, 226, 255, 0.28);
+}
+
+.theme-2030 .feature-icon,
+.theme-2030 .stat-number,
+.theme-2030 .check,
+.theme-2030 .price {
+    color: #89f1ff;
+}
+
+.theme-2030 .download-cta {
+    background: linear-gradient(130deg, rgba(123, 92, 255, 0.95) 0%, rgba(24, 225, 255, 0.82) 100%);
+}
+
+.theme-2030 .footer-bottom,
+.theme-2030 .pricing-features li {
+    border-color: rgba(145, 170, 255, 0.2);
+}
+
+.theme-2030 .feature-card:hover,
+.theme-2030 .pricing-card:hover,
+.theme-2030 .testimonial-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(138, 246, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .theme-2030 .hero h1 {
+        background-size: 180%;
+    }
+}
